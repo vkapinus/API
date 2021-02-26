@@ -1,0 +1,6 @@
+{
+  "name": "type:String",
+  "job": "type:String",
+  "id": "regex:[\\d]",
+  "createdAt": "type:String"
+}

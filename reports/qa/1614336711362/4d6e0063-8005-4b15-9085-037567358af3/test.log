@@ -1,0 +1,38 @@
+[2021-02-26 01:51:54] [IMessager.java] [1] [INFO]  TEST [API - testGetInvalidUserById] STARTED at [13:51:54 2021-02-26]
+[2021-02-26 01:51:54] [LoggingOutputStream.java] [1] [INFO] Request method:	GET
+Request URI:	https://reqres.in/api/users/23
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Fri, 26 Feb 2021 10:51:54 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+Set-Cookie: __cfduid=d4878fa226bca8bb3fdc8bb04a12f32ba1614336714; expires=Sun, 28-Mar-21 10:51:54 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: EXPIRED
+cf-request-id: 087f907f31000017728d237000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=HPnFhiiEdU5DEZFCetXnWfn5HWaxkCOoS255rY9xSJ6adJotJtq53KmtCrBMb2c9ZFvDEOM5CzDMTi3Uilr82kYsSjL%2F2wDeoKE%3D"}],"max_age":604800}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 62791d11ee2c1772-FRA
+
+{
+    
+}
+
+[2021-02-26 01:51:54] [IMessager.java] [1] [INFO]  TEST [API - testGetInvalidUserById] PASSED at [13:51:54 2021-02-26]

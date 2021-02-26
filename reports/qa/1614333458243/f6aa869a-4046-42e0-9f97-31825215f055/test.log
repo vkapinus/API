@@ -1,0 +1,2 @@
+[2021-02-26 12:57:41] [IMessager.java] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2021-02-26 12:57:41] [IMessager.java] [1] [INFO] RESULT #1: TEST [API - testGetUserById] FAIL [log=./1614333458243/e126d7fd-ddab-43c5-a545-04ccec1b35a0/test.log]

@@ -1,0 +1,2 @@
+[2021-02-26 01:38:53] [IMessager.java] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2021-02-26 01:38:53] [IMessager.java] [1] [INFO] RESULT #1: TEST [API - testGetInvalidUserById] FAIL [log=./1614335930998/15973c85-ff1f-4e0a-bd83-66dde5e24f75/test.log]

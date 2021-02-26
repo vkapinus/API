@@ -1,0 +1,4 @@
+[2021-02-26 01:51:54] [IMessager.java] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2021-02-26 01:51:54] [IMessager.java] [1] [INFO] RESULT #1: TEST [API - testCreateUser] PASS [log=./1614336711362/cb312229-0e87-49b9-b91d-6b361c682f66/test.log]
+[2021-02-26 01:51:54] [IMessager.java] [1] [INFO] RESULT #2: TEST [API - testGetInvalidUserById] PASS [log=./1614336711362/4d6e0063-8005-4b15-9085-037567358af3/test.log]
+[2021-02-26 01:51:54] [IMessager.java] [1] [INFO] RESULT #3: TEST [API - testGetUserById] PASS [log=./1614336711362/5cd5178c-81ca-4e01-b8dc-33cffcf4151a/test.log]

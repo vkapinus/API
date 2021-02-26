@@ -1,0 +1,323 @@
+[2021-02-26 12:57:38] [CarinaListener.java] [1] [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+[2021-02-26 12:57:39] [CarinaListener.java] [1] [INFO] CARINA_CORE_VERSION: 6.5.46
+[2021-02-26 12:57:39] [IMessager.java] [1] [INFO]  TEST [API - testGetUserById] STARTED at [12:57:39 2021-02-26]
+[2021-02-26 12:57:41] [LoggingOutputStream.java] [1] [INFO] Request method:	GET
+Request URI:	https://reqres.in/%2F%2Fapi/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Fri, 26 Feb 2021 09:57:40 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=dd36f0b3d0a75a0d83e1ef41ddb344f011614333460; expires=Sun, 28-Mar-21 09:57:40 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+cf-request-id: 087f5ed94c0000cafcd90fc000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=M9lFpDazahHQWUjKgS3vMFUs2o5tzoC8wUHHH55UwB%2BnrKuf9PkIbLjBFJkYtSfAGRQ%2FZgA881ubXmWTwEceQgVOezHLkfNUvUY%3D"}]}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 6278cda2186ecafc-ARN
+Content-Encoding: gzip
+
+<html lang="en">
+  <head>
+    <script>
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js',
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&amp;l=' + l : ''
+                j.async = true
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, 'script', 'dataLayer', 'GTM-KB622KF')
+        </script>
+    <script src="https://js.stripe.com/v3/"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="description" content="A hosted REST-API ready to respond to your AJAX requests"/>
+    <title>
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        </title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/app.css"/>
+  </head>
+  <body>
+    <div class="header-content">
+      <header class="main-header">
+        <section class="wrap">
+          <h1 class="logo">
+            <a shape="rect" href="/">Req | Res</a>
+          </h1>
+        </section>
+      </header>
+      <main class="the-sell">
+        <div class="wrap">
+          <h2 class="tagline">
+                        Test your front-end against a real API
+                    </h2>
+          <section class="key-sells">
+            <div class="sell">
+              <div class="v-center">
+                <h3>Fake data</h3>
+                <p>
+                                    No more tedious sample data creation, we've
+                                    got it covered.
+                                </p>
+              </div>
+              <i class="fa fa-cloud-download"/>
+            </div>
+            <div class="sell">
+              <div class="v-center">
+                <h3>Real responses</h3>
+                <p>
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp; DELETE supported.
+                                </p>
+              </div>
+              <i class="fa fa-code"/>
+            </div>
+            <div class="sell">
+              <div class="v-center">
+                <h3>Always-on</h3>
+                <p>
+
+                                    24/7                   <strong>
+                    <em>free</em>
+                  </strong>
+ access
+                                    in your development phases. Go nuts.
+                                                </p>
+              </div>
+              <i class="fa fa-toggle-on"/>
+            </div>
+          </section>
+          <h2 class="tagline">
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    </h2>
+          <div class="t-center main-arrow">
+            <i class="fa fa-arrow-circle-down"/>
+          </div>
+          <script id="_carbonads_js" async="async" type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&amp;placement=reqresin"/>
+        </div>
+      </main>
+    </div>
+    <div class="container">404</div>
+    <footer>
+      <div class="wrap">
+        <hr class="dark"/>
+        <p class="t-center">
+
+                    Made for developers and designers by
+                              <a shape="rect" href="https://benhowdle.im">Ben Howdle</a>
+        </p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js"/>
+    <script src="/js/app.js"/>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-174008107-1"/>
+    <script>
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
+
+            gtag('config', 'UA-174008107-1')
+        </script>
+    <script>
+            ;(function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                'script',
+                '//www.google-analytics.com/analytics.js',
+                'ga'
+            )
+
+            ga('create', 'UA-55888877-1', 'auto')
+            ga('send', 'pageview')
+        </script>
+  </body>
+</html>
+
+[2021-02-26 12:57:41] [IMessager.java] [1] [ERROR]  TEST [API - testGetUserById] FAILED at [12:57:41 2021-02-26] - 2 expectations failed.
+Expected status code <200> but was <404>.
+
+Expected status line a string containing "OK" doesn't match actual status line "HTTP/1.1 404 Not Found".
+
+
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1656)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)
+io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+com.qaprosoft.carina.core.foundation.api.http.HttpClient.send(HttpClient.java:37)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethod.callAPI(AbstractApiMethod.java:212)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2.callAPI(AbstractApiMethodV2.java:136)
+APIPlaceholderTest.testGetUserById(APIPlaceholderTest.java:76)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:766)
+org.testng.TestRunner.run(TestRunner.java:587)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+org.testng.SuiteRunner.run(SuiteRunner.java:286)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+org.testng.TestNG.runSuites(TestNG.java:1039)
+org.testng.TestNG.run(TestNG.java:1007)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)

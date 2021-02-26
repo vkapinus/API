@@ -1,0 +1,3564 @@
+2021-02-26 12:57:38 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 12:57:39 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 12:57:39 Messager [INFO]  TEST [API - testGetUserById] STARTED at [12:57:39 2021-02-26]
+2021-02-26 12:57:41 AbstractApiMethod [INFO] Request method:	GET
+Request URI:	https://reqres.in/%2F%2Fapi/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Fri, 26 Feb 2021 09:57:40 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=dd36f0b3d0a75a0d83e1ef41ddb344f011614333460; expires=Sun, 28-Mar-21 09:57:40 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+cf-request-id: 087f5ed94c0000cafcd90fc000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=M9lFpDazahHQWUjKgS3vMFUs2o5tzoC8wUHHH55UwB%2BnrKuf9PkIbLjBFJkYtSfAGRQ%2FZgA881ubXmWTwEceQgVOezHLkfNUvUY%3D"}]}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 6278cda2186ecafc-ARN
+Content-Encoding: gzip
+
+<html lang="en">
+  <head>
+    <script>
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js',
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&amp;l=' + l : ''
+                j.async = true
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, 'script', 'dataLayer', 'GTM-KB622KF')
+        </script>
+    <script src="https://js.stripe.com/v3/"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="description" content="A hosted REST-API ready to respond to your AJAX requests"/>
+    <title>
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        </title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/app.css"/>
+  </head>
+  <body>
+    <div class="header-content">
+      <header class="main-header">
+        <section class="wrap">
+          <h1 class="logo">
+            <a shape="rect" href="/">Req | Res</a>
+          </h1>
+        </section>
+      </header>
+      <main class="the-sell">
+        <div class="wrap">
+          <h2 class="tagline">
+                        Test your front-end against a real API
+                    </h2>
+          <section class="key-sells">
+            <div class="sell">
+              <div class="v-center">
+                <h3>Fake data</h3>
+                <p>
+                                    No more tedious sample data creation, we've
+                                    got it covered.
+                                </p>
+              </div>
+              <i class="fa fa-cloud-download"/>
+            </div>
+            <div class="sell">
+              <div class="v-center">
+                <h3>Real responses</h3>
+                <p>
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp; DELETE supported.
+                                </p>
+              </div>
+              <i class="fa fa-code"/>
+            </div>
+            <div class="sell">
+              <div class="v-center">
+                <h3>Always-on</h3>
+                <p>
+
+                                    24/7                   <strong>
+                    <em>free</em>
+                  </strong>
+ access
+                                    in your development phases. Go nuts.
+                                                </p>
+              </div>
+              <i class="fa fa-toggle-on"/>
+            </div>
+          </section>
+          <h2 class="tagline">
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    </h2>
+          <div class="t-center main-arrow">
+            <i class="fa fa-arrow-circle-down"/>
+          </div>
+          <script id="_carbonads_js" async="async" type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&amp;placement=reqresin"/>
+        </div>
+      </main>
+    </div>
+    <div class="container">404</div>
+    <footer>
+      <div class="wrap">
+        <hr class="dark"/>
+        <p class="t-center">
+
+                    Made for developers and designers by
+                              <a shape="rect" href="https://benhowdle.im">Ben Howdle</a>
+        </p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js"/>
+    <script src="/js/app.js"/>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-174008107-1"/>
+    <script>
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
+
+            gtag('config', 'UA-174008107-1')
+        </script>
+    <script>
+            ;(function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                'script',
+                '//www.google-analytics.com/analytics.js',
+                'ga'
+            )
+
+            ga('create', 'UA-55888877-1', 'auto')
+            ga('send', 'pageview')
+        </script>
+  </body>
+</html>
+
+2021-02-26 12:57:41 Messager [ERROR]  TEST [API - testGetUserById] FAILED at [12:57:41 2021-02-26] - 2 expectations failed.
+Expected status code <200> but was <404>.
+
+Expected status line a string containing "OK" doesn't match actual status line "HTTP/1.1 404 Not Found".
+
+
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1656)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)
+io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+com.qaprosoft.carina.core.foundation.api.http.HttpClient.send(HttpClient.java:37)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethod.callAPI(AbstractApiMethod.java:212)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2.callAPI(AbstractApiMethodV2.java:136)
+com.qaprosoft.carina.demo.APIPlaceholderTest.testGetUserById(APIPlaceholderTest.java:76)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:766)
+org.testng.TestRunner.run(TestRunner.java:587)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+org.testng.SuiteRunner.run(SuiteRunner.java:286)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+org.testng.TestNG.runSuites(TestNG.java:1039)
+org.testng.TestNG.run(TestNG.java:1007)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2021-02-26 12:57:41 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 12:57:41 Messager [INFO] RESULT #1: TEST [API - testGetUserById] FAIL [log=./1614333458243/e126d7fd-ddab-43c5-a545-04ccec1b35a0/test.log]
+2021-02-26 12:59:41 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 12:59:42 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 12:59:42 Messager [INFO]  TEST [API - testGetUserById] STARTED at [12:59:42 2021-02-26]
+2021-02-26 12:59:44 AbstractApiMethod [INFO] Request method:	GET
+Request URI:	https://reqres.in/api/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 26 Feb 2021 09:59:44 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=d4db0cb2c45e04aa70895ac189e47dd321614333584; expires=Sun, 28-Mar-21 09:59:44 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"118-P3iKcVpIgCj9HqYeOOrGLX8qJVc"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: MISS
+cf-request-id: 087f60bb1300000d5275114000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=UU7xn5G6hAAEMlXqSMCdH%2FOpyi41CyV7cn%2FcTRc8IkvzDA%2BIAl4FV5SjxylptrOIsvpt0i4tbF4bQowP7i9mQ6lXv6VGwyJ3NV4%3D"}],"max_age":604800}
+NEL: {"max_age":604800,"report_to":"cf-nel"}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 6278d0a4ed2a0d52-ARN
+Content-Encoding: gzip
+
+{
+    "data": {
+        "id": 1,
+        "email": "george.bluth@reqres.in",
+        "first_name": "George",
+        "last_name": "Bluth",
+        "avatar": "https://reqres.in/img/faces/1-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+
+2021-02-26 12:59:44 Messager [ERROR]  TEST [API - testGetUserById] FAILED at [12:59:44 2021-02-26] - 
+Expected: body
+     but none found
+ ; 
+Expected: email
+     but none found
+ ; 
+Expected: id
+     but none found
+ ; 
+Expected: name
+     but none found
+ ; 
+Expected: postId
+     but none found
+ ; 
+Unexpected: data
+ ; 
+Unexpected: support
+
+
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:228)
+com.qaprosoft.carina.demo.APIPlaceholderTest.testGetUserById(APIPlaceholderTest.java:77)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:766)
+org.testng.TestRunner.run(TestRunner.java:587)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+org.testng.SuiteRunner.run(SuiteRunner.java:286)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+org.testng.TestNG.runSuites(TestNG.java:1039)
+org.testng.TestNG.run(TestNG.java:1007)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2021-02-26 12:59:44 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 12:59:44 Messager [INFO] RESULT #1: TEST [API - testGetUserById] FAIL [log=./1614333581654/0ffda0a9-1ba8-4ad8-ba46-8f264c623216/test.log]
+2021-02-26 13:02:35 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 13:02:36 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 13:02:36 Messager [INFO]  TEST [API - testGetUserById] STARTED at [13:02:36 2021-02-26]
+2021-02-26 13:02:38 AbstractApiMethod [INFO] Request method:	GET
+Request URI:	https://reqres.in/api/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 26 Feb 2021 10:02:37 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=d15a9ca30eeb045933e33bf8713115de41614333757; expires=Sun, 28-Mar-21 10:02:37 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"118-P3iKcVpIgCj9HqYeOOrGLX8qJVc"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 6418
+cf-request-id: 087f6361e400000b4f581be000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=nkm1OR%2FOKK9paN6uH%2Bform7WwH%2Bf%2FxNL1pKPcYQ1bAnNpqTNoL5tAvB7hgT895rErpE0nUTI73Gpx4qA3T%2FD3H2Ip67roU8ZtZs%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"max_age":604800,"report_to":"cf-nel"}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 6278d4e30e630b4f-AMS
+Content-Encoding: gzip
+
+{
+    "data": {
+        "id": 1,
+        "email": "george.bluth@reqres.in",
+        "first_name": "George",
+        "last_name": "Bluth",
+        "avatar": "https://reqres.in/img/faces/1-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+
+2021-02-26 13:02:38 Messager [ERROR]  TEST [API - testGetUserById] FAILED at [13:02:38 2021-02-26] - 
+Expected: body
+     but none found
+ ; 
+Expected: email
+     but none found
+ ; 
+Expected: id
+     but none found
+ ; 
+Expected: name
+     but none found
+ ; 
+Expected: postId
+     but none found
+ ; 
+Unexpected: data
+ ; 
+Unexpected: support
+
+
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:228)
+com.qaprosoft.carina.demo.APIPlaceholderTest.testGetUserById(APIPlaceholderTest.java:77)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:766)
+org.testng.TestRunner.run(TestRunner.java:587)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+org.testng.SuiteRunner.run(SuiteRunner.java:286)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+org.testng.TestNG.runSuites(TestNG.java:1039)
+org.testng.TestNG.run(TestNG.java:1007)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2021-02-26 13:02:38 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 13:02:38 Messager [INFO] RESULT #1: TEST [API - testGetUserById] FAIL [log=./1614333755306/d668986f-b7f5-49dd-a8ab-b43a69105d5d/test.log]
+2021-02-26 13:03:36 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 13:03:37 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 13:03:37 Messager [INFO]  TEST [API - testGetUserById] STARTED at [13:03:37 2021-02-26]
+2021-02-26 13:03:39 AbstractApiMethod [INFO] Request method:	GET
+Request URI:	https://reqres.in/api/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 26 Feb 2021 10:03:39 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=d539b65091591485235c458fbf75c4e611614333819; expires=Sun, 28-Mar-21 10:03:39 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"118-P3iKcVpIgCj9HqYeOOrGLX8qJVc"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 235
+cf-request-id: 087f6450be000015e812393000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=odV83mqaw0zXzBqzChYuphSRmBkwV3aAouLA2cuLzhxtjHaCkLXLOHZ0mW%2BBGj4w9V8GYmjPK6GuS7mhYdPJWVZgGc8MfIiFxE4%3D"}],"max_age":604800}
+NEL: {"max_age":604800,"report_to":"cf-nel"}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 6278d66129f615e8-ARN
+Content-Encoding: gzip
+
+{
+    "data": {
+        "id": 1,
+        "email": "george.bluth@reqres.in",
+        "first_name": "George",
+        "last_name": "Bluth",
+        "avatar": "https://reqres.in/img/faces/1-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+
+2021-02-26 13:03:39 Messager [ERROR]  TEST [API - testGetUserById] FAILED at [13:03:39 2021-02-26] - 
+Expected: body
+     but none found
+ ; 
+Expected: email
+     but none found
+ ; 
+Expected: id
+     but none found
+ ; 
+Expected: name
+     but none found
+ ; 
+Expected: postId
+     but none found
+ ; 
+Unexpected: data
+ ; 
+Unexpected: support
+
+
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:228)
+com.qaprosoft.carina.demo.APIPlaceholderTest.testGetUserById(APIPlaceholderTest.java:77)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:766)
+org.testng.TestRunner.run(TestRunner.java:587)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+org.testng.SuiteRunner.run(SuiteRunner.java:286)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+org.testng.TestNG.runSuites(TestNG.java:1039)
+org.testng.TestNG.run(TestNG.java:1007)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2021-02-26 13:03:39 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 13:03:39 Messager [INFO] RESULT #1: TEST [API - testGetUserById] FAIL [log=./1614333816497/b826e91b-a1a0-485d-9be7-a234f2bae16e/test.log]
+2021-02-26 13:12:48 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 13:12:49 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 13:12:49 Messager [INFO]  TEST [API - testGetUserById] STARTED at [13:12:49 2021-02-26]
+2021-02-26 13:12:51 AbstractApiMethod [INFO] Request method:	GET
+Request URI:	https://reqres.in/api/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 26 Feb 2021 10:12:51 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=d394e59bc58ebeb6ee6df129d1923d32b1614334371; expires=Sun, 28-Mar-21 10:12:51 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"118-P3iKcVpIgCj9HqYeOOrGLX8qJVc"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 787
+cf-request-id: 087f6cc02200000d3e55b2e000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=MBfERCnTgXY0Sd1lGcXeUhHk7dJXVi%2FJuNWCenljJwBf9UysFlMOlLhX8U%2F7FhVzmVweHh%2FAmQt39t8pjoiBtbk2S1FFYbKGgcE%3D"}]}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 6278e3e039600d3e-ARN
+Content-Encoding: gzip
+
+{
+    "data": {
+        "id": 1,
+        "email": "george.bluth@reqres.in",
+        "first_name": "George",
+        "last_name": "Bluth",
+        "avatar": "https://reqres.in/img/faces/1-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+
+2021-02-26 13:12:52 Messager [ERROR]  TEST [API - testGetUserById] FAILED at [13:12:52 2021-02-26] - 
+Expected: body
+     but none found
+ ; 
+Expected: email
+     but none found
+ ; 
+Expected: id
+     but none found
+ ; 
+Expected: name
+     but none found
+ ; 
+Expected: postId
+     but none found
+ ; 
+Unexpected: data
+ ; 
+Unexpected: support
+
+
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:228)
+com.qaprosoft.carina.demo.APIPlaceholderTest.testGetUserById(APIPlaceholderTest.java:77)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:766)
+org.testng.TestRunner.run(TestRunner.java:587)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+org.testng.SuiteRunner.run(SuiteRunner.java:286)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+org.testng.TestNG.runSuites(TestNG.java:1039)
+org.testng.TestNG.run(TestNG.java:1007)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2021-02-26 13:12:52 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 13:12:52 Messager [INFO] RESULT #1: TEST [API - testGetUserById] FAIL [log=./1614334368165/2d24e00e-ad24-4af6-a1b8-947064bb4e55/test.log]
+2021-02-26 13:13:57 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 13:13:58 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 13:13:58 Messager [INFO]  TEST [API - testGetUserById] STARTED at [13:13:58 2021-02-26]
+2021-02-26 13:14:00 AbstractApiMethod [INFO] Request method:	GET
+Request URI:	https://reqres.in/api/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 26 Feb 2021 10:14:00 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=d7ea80d27165a5a388123145870b00f511614334440; expires=Sun, 28-Mar-21 10:14:00 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"118-P3iKcVpIgCj9HqYeOOrGLX8qJVc"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: REVALIDATED
+cf-request-id: 087f6dcc6800004e6742066000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=S3zcdAO%2BBOydIH%2BBxqH8PywyG%2BDojNkb%2Fsp9JPxNHDR01pXr6bpIqK6TurlOp6aYDKvbyvj61uuG621NQd7t6JWX%2F4sOpvQ0GVs%3D"}]}
+NEL: {"max_age":604800,"report_to":"cf-nel"}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 6278e58d7ccb4e67-FRA
+Content-Encoding: gzip
+
+{
+    "data": {
+        "id": 1,
+        "email": "george.bluth@reqres.in",
+        "first_name": "George",
+        "last_name": "Bluth",
+        "avatar": "https://reqres.in/img/faces/1-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+
+2021-02-26 13:14:00 Messager [ERROR]  TEST [API - testGetUserById] FAILED at [13:14:00 2021-02-26] - 
+Expected: body
+     but none found
+ ; 
+Expected: email
+     but none found
+ ; 
+Expected: id
+     but none found
+ ; 
+Expected: name
+     but none found
+ ; 
+Expected: postId
+     but none found
+ ; 
+Unexpected: data
+ ; 
+Unexpected: support
+
+
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:228)
+com.qaprosoft.carina.demo.APIPlaceholderTest.testGetUserById(APIPlaceholderTest.java:77)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:766)
+org.testng.TestRunner.run(TestRunner.java:587)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+org.testng.SuiteRunner.run(SuiteRunner.java:286)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+org.testng.TestNG.runSuites(TestNG.java:1039)
+org.testng.TestNG.run(TestNG.java:1007)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2021-02-26 13:14:00 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 13:14:00 Messager [INFO] RESULT #1: TEST [API - testGetUserById] FAIL [log=./1614334437837/f92cb779-e737-41fd-bfaa-6c8f948d82e6/test.log]
+2021-02-26 13:14:38 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 13:14:39 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 13:14:39 Messager [INFO]  TEST [API - testGetUserById] STARTED at [13:14:39 2021-02-26]
+2021-02-26 13:14:40 AbstractApiMethod [INFO] Request method:	GET
+Request URI:	https://reqres.in/api/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 26 Feb 2021 10:14:40 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=d1aa2da5cad19cf87eb563aa84f4978c81614334480; expires=Sun, 28-Mar-21 10:14:40 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"118-P3iKcVpIgCj9HqYeOOrGLX8qJVc"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 896
+cf-request-id: 087f6e69700000f13479aaf000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=NNK01mKOu1uudJmFrrzlfqOFcVfXHq%2BMDcNf6AKXUsFqutZePP%2BGiQgLrnvmDBqOP92s02YbuVLJ%2FvOBga3DMpwFeGQZwbeI7Tg%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"max_age":604800,"report_to":"cf-nel"}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 6278e688beccf134-ARN
+Content-Encoding: gzip
+
+{
+    "data": {
+        "id": 1,
+        "email": "george.bluth@reqres.in",
+        "first_name": "George",
+        "last_name": "Bluth",
+        "avatar": "https://reqres.in/img/faces/1-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+
+2021-02-26 13:14:40 Messager [ERROR]  TEST [API - testGetUserById] FAILED at [13:14:40 2021-02-26] - 
+Expected: body
+     but none found
+ ; 
+Expected: email
+     but none found
+ ; 
+Expected: id
+     but none found
+ ; 
+Expected: name
+     but none found
+ ; 
+Expected: postId
+     but none found
+ ; 
+Unexpected: data
+ ; 
+Unexpected: support
+
+
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:228)
+com.qaprosoft.carina.demo.APIPlaceholderTest.testGetUserById(APIPlaceholderTest.java:77)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:766)
+org.testng.TestRunner.run(TestRunner.java:587)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+org.testng.SuiteRunner.run(SuiteRunner.java:286)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+org.testng.TestNG.runSuites(TestNG.java:1039)
+org.testng.TestNG.run(TestNG.java:1007)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2021-02-26 13:14:40 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 13:14:40 Messager [INFO] RESULT #1: TEST [API - testGetUserById] FAIL [log=./1614334478321/3731baef-6b93-4736-ad6d-bdfc58c55dee/test.log]
+2021-02-26 13:15:17 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 13:15:18 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 13:15:18 Messager [INFO]  TEST [API - testGetUserById] STARTED at [13:15:18 2021-02-26]
+2021-02-26 13:15:19 AbstractApiMethod [INFO] Request method:	GET
+Request URI:	https://reqres.in/api/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 26 Feb 2021 10:15:19 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=db1509e44324451cc10b25d6a09927cc01614334519; expires=Sun, 28-Mar-21 10:15:19 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"118-P3iKcVpIgCj9HqYeOOrGLX8qJVc"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 935
+cf-request-id: 087f6f01c6000015e4fab27000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=RW%2FfID9izBZa%2FPS%2FJfXM6bsDXv2Z6UxlaObzbKL2YpURgakFFWAwkerB6EI5uv5TUvJ7965KAzifgrG5aX0HBIp%2FNKYXlGoVqzQ%3D"}]}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 6278e77c6b8e15e4-ARN
+Content-Encoding: gzip
+
+{
+    "data": {
+        "id": 1,
+        "email": "george.bluth@reqres.in",
+        "first_name": "George",
+        "last_name": "Bluth",
+        "avatar": "https://reqres.in/img/faces/1-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+
+2021-02-26 13:15:19 Messager [ERROR]  TEST [API - testGetUserById] FAILED at [13:15:19 2021-02-26] - data.avatar
+Expected: https://reqres.in/img/faces/2-image.jpg
+     got: https://reqres.in/img/faces/1-image.jpg
+ ; data.email
+Expected: janet.weaver@reqres.in
+     got: george.bluth@reqres.in
+ ; data.first_name
+Expected: Janet
+     got: George
+ ; data.id
+Expected: 2
+     got: 1
+ ; data.last_name
+Expected: Weaver
+     got: Bluth
+
+
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:228)
+com.qaprosoft.carina.demo.APIPlaceholderTest.testGetUserById(APIPlaceholderTest.java:77)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:766)
+org.testng.TestRunner.run(TestRunner.java:587)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+org.testng.SuiteRunner.run(SuiteRunner.java:286)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+org.testng.TestNG.runSuites(TestNG.java:1039)
+org.testng.TestNG.run(TestNG.java:1007)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2021-02-26 13:15:19 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 13:15:19 Messager [INFO] RESULT #1: TEST [API - testGetUserById] FAIL [log=./1614334517436/dd5258dd-88e2-49f0-be2c-ed39e58bdae7/test.log]
+2021-02-26 13:16:24 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 13:16:25 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 13:16:25 Messager [INFO]  TEST [API - testGetUserById] STARTED at [13:16:25 2021-02-26]
+2021-02-26 13:16:26 AbstractApiMethod [INFO] Request method:	GET
+Request URI:	https://reqres.in/api/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 26 Feb 2021 10:16:26 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=d2cf991a38003206ce8f0f4b63129bd4c1614334586; expires=Sun, 28-Mar-21 10:16:26 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"118-P3iKcVpIgCj9HqYeOOrGLX8qJVc"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 1002
+cf-request-id: 087f700749000015e0a5039000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=RFCqohW%2Bj7FFZ98jzOQapd2f3bQklG%2BZzxoML3kCfFrnSzeVzWHgtNWilH06ts372wjfRUE0QGHK5%2F55X1sX6Zw7Bxwdl7GpSu8%3D"}],"max_age":604800}
+NEL: {"max_age":604800,"report_to":"cf-nel"}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 6278e91eda3215e0-ARN
+Content-Encoding: gzip
+
+{
+    "data": {
+        "id": 1,
+        "email": "george.bluth@reqres.in",
+        "first_name": "George",
+        "last_name": "Bluth",
+        "avatar": "https://reqres.in/img/faces/1-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+
+2021-02-26 13:16:26 Messager [INFO]  TEST [API - testGetUserById] PASSED at [13:16:26 2021-02-26]
+2021-02-26 13:16:26 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 13:16:26 Messager [INFO] RESULT #1: TEST [API - testGetUserById] PASS [log=./1614334584303/74bef6e1-5093-4791-abb3-cce329abb327/test.log]
+2021-02-26 13:29:57 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 13:29:59 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 13:29:59 Messager [INFO]  TEST [API - testCreateUser] STARTED at [13:29:59 2021-02-26]
+2021-02-26 13:30:01 AbstractApiMethod [INFO] Request method:	POST
+Request URI:	https://reqres.in/api/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "generate-word(10)",
+    "job": "generate-word(10)"
+}
+HTTP/1.1 201 Created
+Date: Fri, 26 Feb 2021 10:30:01 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 104
+Connection: keep-alive
+Set-Cookie: __cfduid=d0d00fa31f34645b2c24c1c423fade5751614335400; expires=Sun, 28-Mar-21 10:30:00 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"68-/k1Y860V7nfXkZiozsy6mxem+P0"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+cf-request-id: 087f7c73d90000166906a43000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=LTdfhDANpN2qPTxRKDfhGRupM%2BwjJb%2B6KOsN1cld6AdT%2FmUyuRkm%2FOK6aO82w8KfGAngWvnAuCFRDSiXK0SRQSaAKCvlHhXnB28%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 6278fcffc9091669-ARN
+
+{
+    "name": "generate-word(10)",
+    "job": "generate-word(10)",
+    "id": "524",
+    "createdAt": "2021-02-26T10:30:01.034Z"
+}
+
+2021-02-26 13:30:01 Messager [INFO]  TEST [API - testCreateUser] PASSED at [13:30:01 2021-02-26]
+2021-02-26 13:30:01 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 13:30:01 Messager [INFO] RESULT #1: TEST [API - testCreateUser] PASS [log=./1614335397965/440da07b-ed42-4d5a-b9ea-7713559b7695/test.log]
+2021-02-26 13:32:19 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 13:32:20 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 13:32:20 Messager [INFO]  TEST [API - testCreateUser] STARTED at [13:32:20 2021-02-26]
+2021-02-26 13:32:22 AbstractApiMethod [INFO] Request method:	POST
+Request URI:	https://reqres.in/api/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "name",
+    "job": "job"
+}
+HTTP/1.1 201 Created
+Date: Fri, 26 Feb 2021 10:32:21 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 77
+Connection: keep-alive
+Set-Cookie: __cfduid=d54610ac89b32d8b55ea56f3e4af7ba731614335541; expires=Sun, 28-Mar-21 10:32:21 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"4d-sQu8hY11qOiCLfSVRP2pkSRT/lE"
+via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+cf-request-id: 087f7e9a2b0000cb0444873000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=iCyPrUtqMx4Z83Lq0ApckIe4A3rXBDXAXpxm%2BLAnCQAckV4rCAmZ6f2BFwI%2Fkv3SUKmmhXVYynVyWy2EVxNdUIXjRol2PXKshOs%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"max_age":604800,"report_to":"cf-nel"}
+Server: cloudflare
+CF-RAY: 627900704b8ecb04-ARN
+
+{
+    "name": "name",
+    "job": "job",
+    "id": "960",
+    "createdAt": "2021-02-26T10:32:21.889Z"
+}
+
+2021-02-26 13:32:22 Messager [INFO]  TEST [API - testCreateUser] PASSED at [13:32:22 2021-02-26]
+2021-02-26 13:32:22 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 13:32:22 Messager [INFO] RESULT #1: TEST [API - testCreateUser] PASS [log=./1614335539229/040169a4-dcf3-40ac-9121-f7a8b2f641c1/test.log]
+2021-02-26 13:37:24 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 13:37:25 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 13:37:25 Messager [INFO]  TEST [API - testGetInvalidUserById] STARTED at [13:37:25 2021-02-26]
+2021-02-26 13:37:27 AbstractApiMethod [INFO] Request method:	GET
+Request URI:	https://reqres.in/api/users/23
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Fri, 26 Feb 2021 10:37:27 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+Set-Cookie: __cfduid=d02866ec0c45bfb90ade8c8daaa09374b1614335847; expires=Sun, 28-Mar-21 10:37:27 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: EXPIRED
+cf-request-id: 087f83428d00001695ec13d000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=RaD1U06B8MMqqCn1fwozcSigFDf89gvKnbuF9Dh6MlzIPgBMiLywPcQYpwwQsUbhebi1lXZf7jw4Vnb2mACldQif2kPEol%2FZklc%3D"}],"max_age":604800}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 627907e41c541695-ARN
+
+{
+    
+}
+
+2021-02-26 13:37:27 Messager [ERROR]  TEST [API - testGetInvalidUserById] FAILED at [13:37:27 2021-02-26] - 
+Expected: data
+     but none found
+ ; 
+Expected: support
+     but none found
+
+
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:228)
+com.qaprosoft.carina.demo.APIPlaceholderTest.testGetInvalidUserById(APIPlaceholderTest.java:96)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:766)
+org.testng.TestRunner.run(TestRunner.java:587)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+org.testng.SuiteRunner.run(SuiteRunner.java:286)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+org.testng.TestNG.runSuites(TestNG.java:1039)
+org.testng.TestNG.run(TestNG.java:1007)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2021-02-26 13:37:27 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 13:37:27 Messager [INFO] RESULT #1: TEST [API - testGetInvalidUserById] FAIL [log=./1614335844550/5d78f02a-f35d-4e0b-a99d-972a3e604592/test.log]
+2021-02-26 13:37:49 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 13:37:50 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 13:37:50 Messager [INFO]  TEST [API - testGetInvalidUserById] STARTED at [13:37:50 2021-02-26]
+2021-02-26 13:37:52 AbstractApiMethod [INFO] Request method:	GET
+Request URI:	https://reqres.in/api/users/23
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Fri, 26 Feb 2021 10:37:52 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+Set-Cookie: __cfduid=dc5bcf75e85939ee27911a0b82b5b5db01614335872; expires=Sun, 28-Mar-21 10:37:52 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: EXPIRED
+cf-request-id: 087f83a4190000dfc7132d4000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=4iO1dCtVPQyMiNSPjEJ4a8aMy8pJlf1%2FyTzlD9z34c5OF3yXk7rEEi7Vu3MudTe95Ghpf7gp5Hf7q%2FAYx%2B3UAoPbD3cBmtRru94%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 627908802c9adfc7-FRA
+
+{
+    
+}
+
+2021-02-26 13:37:52 Messager [ERROR]  TEST [API - testGetInvalidUserById] FAILED at [13:37:52 2021-02-26] - 
+Expected: data
+     but none found
+ ; 
+Expected: support
+     but none found
+
+
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:228)
+com.qaprosoft.carina.demo.APIPlaceholderTest.testGetInvalidUserById(APIPlaceholderTest.java:96)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:766)
+org.testng.TestRunner.run(TestRunner.java:587)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+org.testng.SuiteRunner.run(SuiteRunner.java:286)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+org.testng.TestNG.runSuites(TestNG.java:1039)
+org.testng.TestNG.run(TestNG.java:1007)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2021-02-26 13:37:52 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 13:37:52 Messager [INFO] RESULT #1: TEST [API - testGetInvalidUserById] FAIL [log=./1614335869477/8f2cfce4-a206-4568-8b4a-9cc10037c382/test.log]
+2021-02-26 13:38:50 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 13:38:51 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 13:38:51 Messager [INFO]  TEST [API - testGetInvalidUserById] STARTED at [13:38:51 2021-02-26]
+2021-02-26 13:38:53 AbstractApiMethod [INFO] Request method:	GET
+Request URI:	https://reqres.in/api/users/23
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Fri, 26 Feb 2021 10:38:53 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+Set-Cookie: __cfduid=d727ea323916092a7ab789767d1d57a191614335933; expires=Sun, 28-Mar-21 10:38:53 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 86
+cf-request-id: 087f8492f1000015e4e8bfd000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=iAiPFA3nhPNU80sEC1iZfBkIkMWqCV0r5m7o2KiX8j87lx7M0GdiS%2FV5%2F4yCxR5PoqLRjzbV3y6Pr84UCaHr4JpQBqeo3xCysmE%3D"}]}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 627909fe4eb615e4-ARN
+
+{
+    
+}
+
+2021-02-26 13:38:53 Messager [ERROR]  TEST [API - testGetInvalidUserById] FAILED at [13:38:53 2021-02-26] - 
+Expected: data
+     but none found
+ ; 
+Expected: support
+     but none found
+
+
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:228)
+com.qaprosoft.carina.demo.APIPlaceholderTest.testGetInvalidUserById(APIPlaceholderTest.java:96)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:766)
+org.testng.TestRunner.run(TestRunner.java:587)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+org.testng.SuiteRunner.run(SuiteRunner.java:286)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+org.testng.TestNG.runSuites(TestNG.java:1039)
+org.testng.TestNG.run(TestNG.java:1007)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2021-02-26 13:38:53 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 13:38:53 Messager [INFO] RESULT #1: TEST [API - testGetInvalidUserById] FAIL [log=./1614335930998/15973c85-ff1f-4e0a-bd83-66dde5e24f75/test.log]
+2021-02-26 13:42:49 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 13:42:50 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 13:42:50 Messager [INFO]  TEST [API - testGetInvalidUserById] STARTED at [13:42:50 2021-02-26]
+2021-02-26 13:42:52 AbstractApiMethod [INFO] Request method:	GET
+Request URI:	https://reqres.in/api/users/23
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Fri, 26 Feb 2021 10:42:51 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+Set-Cookie: __cfduid=da74e4932967bc748c9b51f4ba03231761614336171; expires=Sun, 28-Mar-21 10:42:51 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: EXPIRED
+cf-request-id: 087f88373c0000f14abd291000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=rKwt6mzfj%2F4y1jaA%2FtVlxp6wHSF34nyB8UOkRz4lj9%2F5vxDwt9gLbVihpf%2FPYJ6SM%2FApeEw8bQ%2FPVWK0Kpzx8hXwhOpnQZnp60E%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 62790fd1fdfff14a-ARN
+
+{
+    
+}
+
+2021-02-26 13:42:52 Messager [ERROR]  TEST [API - testGetInvalidUserById] FAILED at [13:42:52 2021-02-26] - 
+Expected: data
+     but none found
+ ; 
+Expected: support
+     but none found
+
+
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:228)
+com.qaprosoft.carina.demo.APIPlaceholderTest.testGetInvalidUserById(APIPlaceholderTest.java:96)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:766)
+org.testng.TestRunner.run(TestRunner.java:587)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+org.testng.SuiteRunner.run(SuiteRunner.java:286)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+org.testng.TestNG.runSuites(TestNG.java:1039)
+org.testng.TestNG.run(TestNG.java:1007)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2021-02-26 13:42:52 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 13:42:52 Messager [INFO] RESULT #1: TEST [API - testGetInvalidUserById] FAIL [log=./1614336169185/a0d0af8f-34c2-4364-9c4f-ad466585f169/test.log]
+2021-02-26 13:44:01 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 13:44:02 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 13:44:02 Messager [INFO]  TEST [API - testGetInvalidUserById] STARTED at [13:44:02 2021-02-26]
+2021-02-26 13:44:03 AbstractApiMethod [INFO] Request method:	GET
+Request URI:	https://reqres.in/api/users/23
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Fri, 26 Feb 2021 10:44:03 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+Set-Cookie: __cfduid=da42813953ef10a05030afe6af8b354ad1614336243; expires=Sun, 28-Mar-21 10:44:03 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 72
+cf-request-id: 087f89509f000015e809a36000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=4E%2BmypVLzGg538oUuZuThn82M8xI38iimy1krEp%2FreIU2cR5Uq6V9mhfZmZv0PANf%2FddgKy3IT4lW9xyAZL6Vxbe8uVtR6%2BtZgM%3D"}],"max_age":604800}
+NEL: {"max_age":604800,"report_to":"cf-nel"}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 627911943a2815e8-ARN
+
+{
+    
+}
+
+2021-02-26 13:44:04 Messager [ERROR]  TEST [API - testGetInvalidUserById] FAILED at [13:44:04 2021-02-26] - 
+Expected: data
+     but none found
+ ; 
+Expected: support
+     but none found
+
+
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
+org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:228)
+com.qaprosoft.carina.demo.APIPlaceholderTest.testGetInvalidUserById(APIPlaceholderTest.java:96)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:766)
+org.testng.TestRunner.run(TestRunner.java:587)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+org.testng.SuiteRunner.run(SuiteRunner.java:286)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+org.testng.TestNG.runSuites(TestNG.java:1039)
+org.testng.TestNG.run(TestNG.java:1007)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2021-02-26 13:44:04 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 13:44:04 Messager [INFO] RESULT #1: TEST [API - testGetInvalidUserById] FAIL [log=./1614336241549/7360a42d-6200-48e3-8fab-b0e2ddb8e7d4/test.log]
+2021-02-26 13:45:30 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 13:45:31 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 13:45:31 Messager [INFO]  TEST [API - testGetInvalidUserById] STARTED at [13:45:31 2021-02-26]
+2021-02-26 13:45:32 AbstractApiMethod [INFO] Request method:	GET
+Request URI:	https://reqres.in/api/users/23
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Fri, 26 Feb 2021 10:45:32 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+Set-Cookie: __cfduid=d39575118522ef0719fb33dab8770462e1614336332; expires=Sun, 28-Mar-21 10:45:32 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 161
+cf-request-id: 087f8aac070000caf0820ab000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=k4uD7V0AgPe9f8nqoYn0WGClq8WDceuUrVqFEfDnl0n72Y2pgO6bYHmq12A7%2B3ByGhnFpLl8SNkpKNGjpGuTQ2d5eS%2FR5zYEKxc%3D"}]}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 627913c0083ecaf0-ARN
+
+{
+    
+}
+
+2021-02-26 13:45:33 Messager [INFO]  TEST [API - testGetInvalidUserById] PASSED at [13:45:33 2021-02-26]
+2021-02-26 13:45:33 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 13:45:33 Messager [INFO] RESULT #1: TEST [API - testGetInvalidUserById] PASS [log=./1614336330111/f649c255-5a00-4012-a6f9-9e7829e93d3b/test.log]
+2021-02-26 13:45:55 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 13:45:56 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 13:45:56 Messager [INFO]  TEST [API - testGetUserById] STARTED at [13:45:56 2021-02-26]
+2021-02-26 13:45:57 AbstractApiMethod [INFO] Request method:	GET
+Request URI:	https://reqres.in/api/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 26 Feb 2021 10:45:57 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=d6b15ae88b025227d41a714e2a45c9d001614336357; expires=Sun, 28-Mar-21 10:45:57 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"118-P3iKcVpIgCj9HqYeOOrGLX8qJVc"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 2773
+cf-request-id: 087f8b0cdb0000cb00e881c000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=BZ2Yv2EdNYgJCjRnRUazoeO1NenPjtv58d7CLTOn5QLhT%2FxjbMaBuzqZmQLgEoxBAKQ%2B%2BZuckxzMRB5s31n1uW79ZHd%2FAifH%2F%2FU%3D"}],"max_age":604800,"group":"cf-nel"}
+NEL: {"max_age":604800,"report_to":"cf-nel"}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 6279145afd12cb00-ARN
+Content-Encoding: gzip
+
+{
+    "data": {
+        "id": 1,
+        "email": "george.bluth@reqres.in",
+        "first_name": "George",
+        "last_name": "Bluth",
+        "avatar": "https://reqres.in/img/faces/1-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+
+2021-02-26 13:45:57 Messager [INFO]  TEST [API - testGetUserById] PASSED at [13:45:57 2021-02-26]
+2021-02-26 13:45:57 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 13:45:57 Messager [INFO] RESULT #1: TEST [API - testGetUserById] PASS [log=./1614336355141/f4eebc0c-c7d6-4785-b8db-75ae2866735a/test.log]
+2021-02-26 13:51:51 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 13:51:52 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 13:51:52 Messager [INFO]  TEST [API - testCreateUser] STARTED at [13:51:52 2021-02-26]
+2021-02-26 13:51:54 AbstractApiMethod [INFO] Request method:	POST
+Request URI:	https://reqres.in/api/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "name",
+    "job": "job"
+}
+HTTP/1.1 201 Created
+Date: Fri, 26 Feb 2021 10:51:54 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 77
+Connection: keep-alive
+Set-Cookie: __cfduid=dd56c0d09b0382c9482ab0deeb174b6fe1614336714; expires=Sun, 28-Mar-21 10:51:54 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"4d-lZ5GerCUwjP6+JmQhqOfokrxqno"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+cf-request-id: 087f907da100002b65d7865000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=oLdU5Sv35GuQI6SCpQU8Dhn4wzbNkwuLmJpu5CqeNmYTMZFmelTu8GR3voqHaX4Im8ID2u90FzFJKxFxdaiX%2FuumG52EC%2F2j9uI%3D"}]}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 62791d0f6e302b65-FRA
+
+{
+    "name": "name",
+    "job": "job",
+    "id": "521",
+    "createdAt": "2021-02-26T10:51:54.198Z"
+}
+
+2021-02-26 13:51:54 Messager [INFO]  TEST [API - testCreateUser] PASSED at [13:51:54 2021-02-26]
+2021-02-26 13:51:54 Messager [INFO]  TEST [API - testGetInvalidUserById] STARTED at [13:51:54 2021-02-26]
+2021-02-26 13:51:54 AbstractApiMethod [INFO] Request method:	GET
+Request URI:	https://reqres.in/api/users/23
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Fri, 26 Feb 2021 10:51:54 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+Set-Cookie: __cfduid=d4878fa226bca8bb3fdc8bb04a12f32ba1614336714; expires=Sun, 28-Mar-21 10:51:54 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: EXPIRED
+cf-request-id: 087f907f31000017728d237000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=HPnFhiiEdU5DEZFCetXnWfn5HWaxkCOoS255rY9xSJ6adJotJtq53KmtCrBMb2c9ZFvDEOM5CzDMTi3Uilr82kYsSjL%2F2wDeoKE%3D"}],"max_age":604800}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 62791d11ee2c1772-FRA
+
+{
+    
+}
+
+2021-02-26 13:51:54 Messager [INFO]  TEST [API - testGetInvalidUserById] PASSED at [13:51:54 2021-02-26]
+2021-02-26 13:51:54 Messager [INFO]  TEST [API - testGetUserById] STARTED at [13:51:54 2021-02-26]
+2021-02-26 13:51:54 AbstractApiMethod [INFO] Request method:	GET
+Request URI:	https://reqres.in/api/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 26 Feb 2021 10:51:54 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=de7df1d933455343c588278011847e5131614336714; expires=Sun, 28-Mar-21 10:51:54 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"118-P3iKcVpIgCj9HqYeOOrGLX8qJVc"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 2274
+cf-request-id: 087f9080c900004e389a317000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=D%2F%2FrFNQ9TTMubDL%2B2cH8y1d7gjQTq9W5XIBgPtW1en1yH9shFFU3Wr%2BKLvmxPINWX5ERR19TyaZpvo64IiN1uuNyr6ldE8%2F3PEI%3D"}],"max_age":604800}
+NEL: {"max_age":604800,"report_to":"cf-nel"}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 62791d1479c34e38-FRA
+Content-Encoding: gzip
+
+{
+    "data": {
+        "id": 1,
+        "email": "george.bluth@reqres.in",
+        "first_name": "George",
+        "last_name": "Bluth",
+        "avatar": "https://reqres.in/img/faces/1-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+
+2021-02-26 13:51:54 Messager [INFO]  TEST [API - testGetUserById] PASSED at [13:51:54 2021-02-26]
+2021-02-26 13:51:54 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 13:51:54 Messager [INFO] RESULT #1: TEST [API - testCreateUser] PASS [log=./1614336711362/cb312229-0e87-49b9-b91d-6b361c682f66/test.log]
+2021-02-26 13:51:54 Messager [INFO] RESULT #2: TEST [API - testGetInvalidUserById] PASS [log=./1614336711362/4d6e0063-8005-4b15-9085-037567358af3/test.log]
+2021-02-26 13:51:54 Messager [INFO] RESULT #3: TEST [API - testGetUserById] PASS [log=./1614336711362/5cd5178c-81ca-4e01-b8dc-33cffcf4151a/test.log]
+2021-02-26 14:03:09 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 14:03:10 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 14:03:10 Messager [INFO]  TEST [API - testCreateUser] STARTED at [14:03:10 2021-02-26]
+2021-02-26 14:03:12 AbstractApiMethod [INFO] Request method:	POST
+Request URI:	https://reqres.in/api/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "name",
+    "job": "job"
+}
+HTTP/1.1 201 Created
+Date: Fri, 26 Feb 2021 11:03:12 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 76
+Connection: keep-alive
+Set-Cookie: __cfduid=d12d612fa2326b0b9e6578620aa86b7b21614337392; expires=Sun, 28-Mar-21 11:03:12 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"4c-Gcmwj5wo42MB/8hwRwF/L03gV8E"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+cf-request-id: 087f9ad599000015f04d391000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=poK7JDB5aFC0lhgZkyZe4PLzuzhM1k0G3hVGWAl37WC0Cu4m0IAuiVLlBVVLpsDDDPSgDndZoHXZDHHobXSpLKEssHEnYQOypTQ%3D"}],"max_age":604800}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 62792d9c29b815f0-ARN
+
+{
+    "name": "name",
+    "job": "job",
+    "id": "31",
+    "createdAt": "2021-02-26T11:03:12.145Z"
+}
+
+2021-02-26 14:03:12 Messager [INFO]  TEST [API - testCreateUser] PASSED at [14:03:12 2021-02-26]
+2021-02-26 14:03:12 Messager [INFO]  TEST [API - testGetInvalidUserById] STARTED at [14:03:12 2021-02-26]
+2021-02-26 14:03:12 AbstractApiMethod [INFO] Request method:	GET
+Request URI:	https://reqres.in/api/users/23
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Date: Fri, 26 Feb 2021 11:03:12 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+Set-Cookie: __cfduid=d36e10011f431e5745238d830f631e9ab1614337392; expires=Sun, 28-Mar-21 11:03:12 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: EXPIRED
+cf-request-id: 087f9ad7420000f14648196000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=og766wKUfdnxEz5BfUVrzZj1f17lWoqp8rGjkVGNCkeiRnvBUodA%2BKp%2F2ysSfnO7DRWGYEK4KN%2BfVAWCKvLRdi99UGQ%2BkW%2FeNUg%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"max_age":604800,"report_to":"cf-nel"}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 62792d9ecab1f146-ARN
+
+{
+    
+}
+
+2021-02-26 14:03:12 Messager [INFO]  TEST [API - testGetInvalidUserById] PASSED at [14:03:12 2021-02-26]
+2021-02-26 14:03:12 Messager [INFO]  TEST [API - testGetUserById] STARTED at [14:03:12 2021-02-26]
+2021-02-26 14:03:12 AbstractApiMethod [INFO] Request method:	GET
+Request URI:	https://reqres.in/api/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 26 Feb 2021 11:03:12 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=d518a7c0e8b0aae6c2f645b0191101d301614337392; expires=Sun, 28-Mar-21 11:03:12 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"118-P3iKcVpIgCj9HqYeOOrGLX8qJVc"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 3808
+cf-request-id: 087f9ad871000016856e8bf000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=dcDoxTC9Obm5Ln9%2FWGOn2ZOH3LLnKyZFEqrazUpfEWYysrNeuDGCFrmFeuSaWxrDEcXTAPwKbzudmlKpVbMwzJ%2BUOl1cn%2Fs5xjE%3D"}],"max_age":604800,"group":"cf-nel"}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 62792da0beb21685-ARN
+Content-Encoding: gzip
+
+{
+    "data": {
+        "id": 1,
+        "email": "george.bluth@reqres.in",
+        "first_name": "George",
+        "last_name": "Bluth",
+        "avatar": "https://reqres.in/img/faces/1-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+
+2021-02-26 14:03:12 Messager [INFO]  TEST [API - testGetUserById] PASSED at [14:03:12 2021-02-26]
+2021-02-26 14:03:12 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 14:03:12 Messager [INFO] RESULT #1: TEST [API - testCreateUser] PASS [log=./1614337389462/ed91b31b-450a-4bf3-91e9-50bd4f302f24/test.log]
+2021-02-26 14:03:12 Messager [INFO] RESULT #2: TEST [API - testGetInvalidUserById] PASS [log=./1614337389462/c615ea71-e4e6-4349-a5d1-67e13efe7ff4/test.log]
+2021-02-26 14:03:12 Messager [INFO] RESULT #3: TEST [API - testGetUserById] PASS [log=./1614337389462/9bb19c23-73b2-4adb-a2c3-5f3598a56298/test.log]
+2021-02-26 14:06:08 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 14:06:09 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 14:06:09 Messager [INFO]  TEST [API - testCreateUser] STARTED at [14:06:09 2021-02-26]
+2021-02-26 14:06:10 AbstractApiMethod [INFO] Request method:	POST
+Request URI:	http://localhost:8080/%24%7Bapi_url%7D/api/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "name",
+    "job": "job"
+}
+
+2021-02-26 14:06:10 Messager [ERROR]  TEST [API - testCreateUser] FAILED at [14:06:10 2021-02-26] - Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: api_url.
+
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1248)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176)
+io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1135)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+io.restassured.filter.Filter$filter$0.call(Unknown Source)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+io.restassured.filter.Filter$filter.call(Unknown Source)
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+io.restassured.filter.Filter$filter.call(Unknown Source)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+io.restassured.filter.Filter$filter.call(Unknown Source)
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+io.restassured.filter.log.StatusCodeBasedLoggingFilter.filter(StatusCodeBasedLoggingFilter.java:112)
+io.restassured.filter.log.ResponseLoggingFilter.filter(ResponseLoggingFilter.java:31)
+io.restassured.filter.Filter$filter.call(Unknown Source)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+io.restassured.filter.Filter$filter.call(Unknown Source)
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+io.restassured.filter.log.RequestLoggingFilter.filter(RequestLoggingFilter.java:140)
+io.restassured.filter.Filter$filter.call(Unknown Source)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:157)
+io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+io.restassured.filter.FilterContext$next.call(Unknown Source)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1029)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:816)
+groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:175)
+io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+com.qaprosoft.carina.core.foundation.api.http.HttpClient.send(HttpClient.java:43)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethod.callAPI(AbstractApiMethod.java:212)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2.callAPI(AbstractApiMethodV2.java:136)
+com.solvd.kapinus.tests.APIReqresTest.testCreateUser(APIReqresTest.java:30)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:566)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+org.testng.TestRunner.privateRun(TestRunner.java:766)
+org.testng.TestRunner.run(TestRunner.java:587)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+org.testng.SuiteRunner.run(SuiteRunner.java:286)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+org.testng.TestNG.runSuites(TestNG.java:1039)
+org.testng.TestNG.run(TestNG.java:1007)
+com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2021-02-26 14:06:10 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 14:06:10 Messager [INFO] RESULT #1: TEST [API - testCreateUser] FAIL [log=./1614337568089/2e0640c8-f9a1-40dd-b68e-972788bce197/test.log]
+2021-02-26 14:06:29 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+browser=chrome
+browser_language=en_US
+selenium_host=http://localhost:4444/wd/hub
+max_driver_count=3
+headless=false
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_port=0
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+track_known_issues=false
+auto_screenshot=true
+explicit_timeout=20
+auto_download=false
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=0
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+thread_count=3
+data_provider_thread_count=1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+test_naming_pattern={method_name}
+element_loading_strategy=BY_PRESENCE_OR_VISIBILITY
+page_opening_strategy=BY_URL_AND_ELEMENT
+forcibly_disable_driver_quit=false
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_property_name=new_custom_messages_
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_bitrate=1000000
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+================================================
+
+2021-02-26 14:06:30 CarinaListener [INFO] CARINA_CORE_VERSION: 6.5.46
+2021-02-26 14:06:30 Messager [INFO]  TEST [API - testCreateUser] STARTED at [14:06:30 2021-02-26]
+2021-02-26 14:06:33 AbstractApiMethod [INFO] Request method:	POST
+Request URI:	https://reqres.in/api/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "name",
+    "job": "job"
+}
+HTTP/1.1 201 Created
+Date: Fri, 26 Feb 2021 11:06:32 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 77
+Connection: keep-alive
+Set-Cookie: __cfduid=d2c9ff6230f5fa23f5aafc8d69f2f37ec1614337592; expires=Sun, 28-Mar-21 11:06:32 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"4d-9Rb++IqtyoTh3xrL+rcXYhPa2yA"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+cf-request-id: 087f9de36c0000dab0f48db000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=KoZknDoXJBre2xfut5RWlTD%2BI3tlneEpxlsVQQOmj%2FU0%2BqRstGwi4Qtxb8CJFsMC%2FUZVEDnUmCvBKhfeTAWVvxnMBbExcceJ5ro%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"max_age":604800,"report_to":"cf-nel"}
+Server: cloudflare
+CF-RAY: 6279327f1f8bdab0-ARN
+
+{
+    "name": "name",
+    "job": "job",
+    "id": "147",
+    "createdAt": "2021-02-26T11:06:32.889Z"
+}
+
+2021-02-26 14:06:33 Messager [INFO]  TEST [API - testCreateUser] PASSED at [14:06:33 2021-02-26]
+2021-02-26 14:06:33 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2021-02-26 14:06:33 Messager [INFO] RESULT #1: TEST [API - testCreateUser] PASS [log=./1614337589677/1951e38f-c1bb-424b-8dbe-95ce18f073b8/test.log]
