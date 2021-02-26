@@ -10,6 +10,7 @@ import com.solvd.kapinus.reqres.PostMethod;
 import org.skyscreamer.jsonassert.JSONCompareMode;
 import org.testng.annotations.Test;
 
+
 public class APIReqresTest extends AbstractTest {
 
     @Test
