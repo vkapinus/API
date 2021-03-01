@@ -1,0 +1,11 @@
+[
+  {
+    "id": "type:String",
+    "name": "type:String",
+    "symbol": "type:String",
+    "rank": "regex:[\\d]",
+    "is_new": false,
+    "is_active": true,
+    "type": "type:String"
+  }
+]

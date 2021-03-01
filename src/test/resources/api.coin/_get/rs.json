@@ -1,0 +1,15 @@
+{
+  "market_cap_usd":"regex:[\\d]",
+  "volume_24h_usd":"regex:[\\d]",
+  "bitcoin_dominance_percentage":"regex:[\\d]",
+  "cryptocurrencies_number":"regex:[\\d]",
+  "market_cap_ath_value":"regex:[\\d]",
+  "market_cap_ath_date":"type:String",
+  "volume_24h_ath_value":"regex:[\\d]",
+  "volume_24h_ath_date":"type:String",
+  "volume_24h_percent_from_ath":"regex:[\\d]",
+  "volume_24h_percent_to_ath":"regex:[\\d]",
+  "market_cap_change_24h":"regex:[\\d]",
+  "volume_24h_change_24h":"regex:[\\d]",
+  "last_updated":"regex:[\\d]"
+}

@@ -1,0 +1,12 @@
+{"code":"regex:[\\d]",
+  "meta":null,
+  "data": {
+  "id":"regex:[\\d]",
+  "name":"type:String",
+  "email":"type:String",
+  "gender":"type:String",
+  "status":"type:String",
+  "created_at":"type:String",
+  "updated_at":"type:String"
+  }
+}
