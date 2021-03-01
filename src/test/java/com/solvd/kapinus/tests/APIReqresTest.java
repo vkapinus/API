@@ -4,6 +4,7 @@ import com.qaprosoft.apitools.validation.JsonCompareKeywords;
 import com.qaprosoft.carina.core.foundation.AbstractTest;
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
 import com.solvd.kapinus.reqres.*;
+import io.restassured.path.json.JsonPath;
 import org.skyscreamer.jsonassert.JSONCompareMode;
 import org.testng.annotations.Test;
 
@@ -60,4 +61,15 @@ public class APIReqresTest extends AbstractTest {
         loginUser.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
     }
 
+
+    @Test
+    @MethodOwner(owner = "kapinus")
+    public void testGroupPostGet() {
+        PostMethod postMethod = new PostMethod();
+        String rs = postMethod.callAPI().asString();
+        postMethod.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
+        String id = new JsonPath(rs).getString("id");
+        GetUserByIdMethod getUserByIdMethod = new GetUserByIdMethod(Integer.parseInt(id));
+        getUserByIdMethod.callAPI();
+    }
 }

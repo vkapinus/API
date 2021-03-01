@@ -31,9 +31,9 @@ public class APIUnixtimeTest extends AbstractTest {
     @Test
     @MethodOwner(owner = "kapinus")
     public void testCreateTimestamp() {
-        PostTimeStampMethod postTimeStamp = new PostTimeStampMethod();
-        postTimeStamp.callAPI();
-        postTimeStamp.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
+        PostTimeStampMethod postMethod = new PostTimeStampMethod();
+        postMethod.callAPI();
+        postMethod.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
     }
 
     @Test
@@ -43,4 +43,5 @@ public class APIUnixtimeTest extends AbstractTest {
         postDateTime.callAPI();
         postDateTime.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
     }
+
 }
