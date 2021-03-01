@@ -1,0 +1,54 @@
+{
+  "page": "regex:[\\d]",
+  "per_page": "regex:[\\d]",
+  "total": "regex:[\\d]",
+  "total_pages": "regex:[\\d]",
+  "data": [
+    {
+      "id": "regex:[\\d]",
+      "name": "type:String",
+      "year": "regex:[\\d]",
+      "color": "type:String",
+      "pantone_value": "type:String"
+    },
+    {
+      "id": "regex:[\\d]",
+      "name": "type:String",
+      "year": "regex:[\\d]",
+      "color": "type:String",
+      "pantone_value": "type:String"
+    },
+    {
+      "id": "regex:[\\d]",
+      "name": "type:String",
+      "year": "regex:[\\d]",
+      "color": "type:String",
+      "pantone_value": "type:String"
+    },
+    {
+      "id": "regex:[\\d]",
+      "name": "type:String",
+      "year": "regex:[\\d]",
+      "color": "type:String",
+      "pantone_value": "type:String"
+    },
+    {
+      "id": "regex:[\\d]",
+      "name": "type:String",
+      "year": "regex:[\\d]",
+      "color": "type:String",
+      "pantone_value": "type:String"
+    },
+    {
+      "id": "regex:[\\d]",
+      "name": "type:String",
+      "year": "regex:[\\d]",
+      "color": "type:String",
+      "pantone_value": "type:String"
+    }
+  ],
+  "support": {
+    "url": "type:String",
+    "text": "type:String"
+  }
+}

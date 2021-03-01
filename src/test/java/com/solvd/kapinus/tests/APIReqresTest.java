@@ -3,9 +3,7 @@ package com.solvd.kapinus.tests;
 import com.qaprosoft.apitools.validation.JsonCompareKeywords;
 import com.qaprosoft.carina.core.foundation.AbstractTest;
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
-import com.solvd.kapinus.reqres.GetInvalidUserByIdMethod;
-import com.solvd.kapinus.reqres.GetUserByIdMethod;
-import com.solvd.kapinus.reqres.PostMethod;
+import com.solvd.kapinus.reqres.*;
 import org.skyscreamer.jsonassert.JSONCompareMode;
 import org.testng.annotations.Test;
 
@@ -37,4 +35,29 @@ public class APIReqresTest extends AbstractTest {
         getInvalidUserByIdMethod.callAPI();
         getInvalidUserByIdMethod.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
     }
+
+    @Test(description = "JIRA#DEMO-0003")
+    @MethodOwner(owner = "kapinus")
+    public void testDeletePost() {
+        int id = 1;
+        DeleteUserByIdMethod deleteUserById = new DeleteUserByIdMethod(id);
+        deleteUserById.callAPI();
+    }
+
+    @Test
+    @MethodOwner(owner = "kapinus")
+    public void testGetUsers() {
+        GetUsersMethod getUsers = new GetUsersMethod();
+        getUsers.callAPI();
+        getUsers.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
+    }
+
+    @Test
+    @MethodOwner(owner = "kapinus")
+    public void testLoginUser() {
+        LoginUserMethod loginUser = new LoginUserMethod();
+        loginUser.callAPI();
+        loginUser.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
+    }
+
 }
