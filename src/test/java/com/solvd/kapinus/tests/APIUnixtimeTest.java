@@ -16,7 +16,7 @@ public class APIUnixtimeTest extends AbstractTest {
     @MethodOwner(owner = "kapinus")
     public void testGetDateTime() {
         GetDateTimeMethod getDateTime = new GetDateTimeMethod();
-        getDateTime.callAPI();
+        getDateTime.callAPIExpectSuccess();
         getDateTime.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
     }
 
@@ -24,7 +24,7 @@ public class APIUnixtimeTest extends AbstractTest {
     @MethodOwner(owner = "kapinus")
     public void testGetUnixTimeStamp() {
         GetUnixTimeStamp getUnixTimeStamp = new GetUnixTimeStamp();
-        getUnixTimeStamp.callAPI();
+        getUnixTimeStamp.callAPIExpectSuccess();
         getUnixTimeStamp.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
     }
 
@@ -32,7 +32,7 @@ public class APIUnixtimeTest extends AbstractTest {
     @MethodOwner(owner = "kapinus")
     public void testCreateTimestamp() {
         PostTimeStampMethod postMethod = new PostTimeStampMethod();
-        postMethod.callAPI();
+        postMethod.callAPIExpectSuccess();
         postMethod.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
     }
 
@@ -40,7 +40,7 @@ public class APIUnixtimeTest extends AbstractTest {
     @MethodOwner(owner = "kapinus")
     public void testCreateDateTime() {
         PostDateTimeMethod postDateTime= new PostDateTimeMethod();
-        postDateTime.callAPI();
+        postDateTime.callAPIExpectSuccess();
         postDateTime.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
     }
 

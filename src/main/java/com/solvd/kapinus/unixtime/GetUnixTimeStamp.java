@@ -8,7 +8,6 @@ import com.qaprosoft.carina.core.foundation.api.http.HttpMethodType;
 import com.qaprosoft.carina.core.foundation.api.http.HttpResponseStatusType;
 import com.qaprosoft.carina.core.foundation.utils.Configuration;
 
-
 @ResponseTemplatePath(path = "api.time/_get/rs_time.json")
 @SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
 @Endpoint(url = "${api_url}/UnixTime/tounixtimestamp?datetime=now", methodType = HttpMethodType.GET)

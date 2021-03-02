@@ -13,9 +13,9 @@ public class APIGorestTest extends AbstractTest {
     @Test
     @MethodOwner(owner = "kapinus")
     public void testGetUserById() {
-        int id = 2;
+        int id = 7;
         GetUserByIdMethod getUserByIdMethod = new GetUserByIdMethod(id);
-        getUserByIdMethod.callAPI();
+        getUserByIdMethod.callAPIExpectSuccess();
         getUserByIdMethod.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
     }
 
@@ -24,8 +24,6 @@ public class APIGorestTest extends AbstractTest {
     public void testDeleteUser() {
         int id = 2;
         DeleteUserGorestByIdMethod deleteUserById = new DeleteUserGorestByIdMethod(id);
-        deleteUserById.callAPI();
+        deleteUserById.callAPIExpectSuccess();
     }
-
-
 }

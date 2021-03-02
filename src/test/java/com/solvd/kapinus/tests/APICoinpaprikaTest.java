@@ -14,7 +14,7 @@ public class APICoinpaprikaTest extends AbstractTest {
     @MethodOwner(owner = "kapinus")
     public void testGetMarket() {
         GetMarketMethod getMarket = new GetMarketMethod();
-        getMarket.callAPI();
+        getMarket.callAPIExpectSuccess();
         getMarket.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
     }
 
@@ -22,7 +22,7 @@ public class APICoinpaprikaTest extends AbstractTest {
     @MethodOwner(owner = "kapinus")
     public void testGetCoins() {
         GetCoinsMethod getCoins = new GetCoinsMethod();
-        getCoins.callAPI();
+        getCoins.callAPIExpectSuccess();
         getCoins.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
     }
 }

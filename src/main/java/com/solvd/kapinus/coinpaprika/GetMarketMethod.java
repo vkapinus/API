@@ -15,6 +15,4 @@ public class GetMarketMethod extends AbstractApiMethodV2 {
     public GetMarketMethod(){
         replaceUrlPlaceholder("api_url", Configuration.getEnvArg("api_url1"));
     }
-
-
 }

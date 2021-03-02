@@ -16,7 +16,7 @@ public class APIReqresTest extends AbstractTest {
     public void testGetUserById() {
         int id = 1;
         GetUserByIdMethod getUserByIdMethod = new GetUserByIdMethod(id);
-        getUserByIdMethod.callAPI();
+        getUserByIdMethod.callAPIExpectSuccess();
         getUserByIdMethod.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
     }
 
@@ -24,7 +24,7 @@ public class APIReqresTest extends AbstractTest {
     @MethodOwner(owner = "kapinus")
     public void testCreateUser() {
         PostMethod postMethod = new PostMethod();
-        postMethod.callAPI();
+        postMethod.callAPIExpectSuccess();
         postMethod.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
     }
 
@@ -57,7 +57,7 @@ public class APIReqresTest extends AbstractTest {
     @MethodOwner(owner = "kapinus")
     public void testLoginUser() {
         LoginUserMethod loginUser = new LoginUserMethod();
-        loginUser.callAPI();
+        loginUser.callAPIExpectSuccess();
         loginUser.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
     }
 
@@ -66,10 +66,11 @@ public class APIReqresTest extends AbstractTest {
     @MethodOwner(owner = "kapinus")
     public void testGroupPostGet() {
         PostMethod postMethod = new PostMethod();
-        String rs = postMethod.callAPI().asString();
+        String rs = postMethod.callAPIExpectSuccess().asString();
         postMethod.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
         String id = new JsonPath(rs).getString("id");
         GetUserByIdMethod getUserByIdMethod = new GetUserByIdMethod(Integer.parseInt(id));
         getUserByIdMethod.callAPI();
+        getUserByIdMethod.validateResponse();
     }
 }
