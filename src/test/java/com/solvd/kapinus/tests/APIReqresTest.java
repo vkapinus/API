@@ -4,6 +4,7 @@ import com.qaprosoft.apitools.validation.JsonCompareKeywords;
 import com.qaprosoft.carina.core.foundation.AbstractTest;
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
 import com.solvd.kapinus.reqres.*;
+import io.restassured.path.json.JsonPath;
 import org.skyscreamer.jsonassert.JSONCompareMode;
 import org.testng.annotations.Test;
 
@@ -15,7 +16,7 @@ public class APIReqresTest extends AbstractTest {
     public void testGetUserById() {
         int id = 1;
         GetUserByIdMethod getUserByIdMethod = new GetUserByIdMethod(id);
-        getUserByIdMethod.callAPI();
+        getUserByIdMethod.callAPIExpectSuccess();
         getUserByIdMethod.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
     }
 
@@ -23,7 +24,7 @@ public class APIReqresTest extends AbstractTest {
     @MethodOwner(owner = "kapinus")
     public void testCreateUser() {
         PostMethod postMethod = new PostMethod();
-        postMethod.callAPI();
+        postMethod.callAPIExpectSuccess();
         postMethod.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
     }
 
@@ -56,8 +57,20 @@ public class APIReqresTest extends AbstractTest {
     @MethodOwner(owner = "kapinus")
     public void testLoginUser() {
         LoginUserMethod loginUser = new LoginUserMethod();
-        loginUser.callAPI();
+        loginUser.callAPIExpectSuccess();
         loginUser.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
     }
 
+
+    @Test
+    @MethodOwner(owner = "kapinus")
+    public void testGroupPostGet() {
+        PostMethod postMethod = new PostMethod();
+        String rs = postMethod.callAPIExpectSuccess().asString();
+        postMethod.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
+        String id = new JsonPath(rs).getString("id");
+        GetUserByIdMethod getUserByIdMethod = new GetUserByIdMethod(Integer.parseInt(id));
+        getUserByIdMethod.callAPI();
+        getUserByIdMethod.validateResponse();
+    }
 }
